@@ -44,6 +44,7 @@ class Calentadorh2o:
         for i in range(3):
             temperaturas = []
             tiempos = []
+            print("Espesor:", self.espesor[i])
             for tiempo in range(self.tiempo_max):
                 perdida_calor = (self.k * area * (self.ti - self.te)) / self.espesor[i]
                 temperaturas.append(self.ti)
